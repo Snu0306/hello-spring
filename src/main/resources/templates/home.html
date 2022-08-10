@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+	<div class="container">
+		<div>
+			<h1>Hello Spring</h1>
+			<p>회원 기능</p>
+			<p>
+				<a href="/members/new">회원 가입</a> <a href="/members">회원 목록</a>
+			</p>
+		</div>
+
+	</div>
+	<!-- /container -->
+	<div>
+		<dialog id="myFirstDialog"
+			style="width:50%;background-color:#F4FFEF;border:1px dotted black;">
+		<p>
+			<q>I am so clever that sometimes I don't understand a single word
+				of what I am saying. </q> - <cite>Oscar Wilde</cite>
+		</p>
+		<button id="hide">Close</button>
+		</dialog>
+		<button id="show">Show Dialog</button>
+	</div>
+	<script type="text/JavaScript">  
+
+	(function() {    
+    
+		var dialog = document.getElementById('myFirstDialog');    
+    
+		document.getElementById('show').onclick = function() {    
+        
+			dialog.show();    
+    
+		};    
+    
+		document.getElementById('hide').onclick = function() {    
+        
+			dialog.close();    
+    
+		};    
+	
+	})();   
+</script>
+</body>
+</html>
